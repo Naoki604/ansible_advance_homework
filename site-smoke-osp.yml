@@ -16,6 +16,10 @@
     register: website
     tags:
       - osp.smoke
+      
+  - name: check debug
+    debug:
+      var: website
 
   - name: Fail if 'Ansible has done its job' is not in the page content
     fail:
