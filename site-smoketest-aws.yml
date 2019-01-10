@@ -2,7 +2,7 @@
   gather_facts: false
   tasks:
   - name: Use Uri module for wrting smoke test.
-    Uri:
+    uri:
       url: http://localhost
       return_content: yes
     register: website
