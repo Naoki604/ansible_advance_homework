@@ -1,7 +1,7 @@
 - hosts: frontends
   gather_facts: false
   tasks:
-  - name: check contents of website on Prod
+  - name: Check contents of website on Prod
     uri:
       url: http://localhost
       return_content: yes
